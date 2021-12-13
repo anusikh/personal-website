@@ -3,6 +3,7 @@ import { useNavigate, Outlet, useLocation } from "react-router-dom";
 import "./styles/Home.css";
 import Avatar from "../assets/Avatar.png";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import BlogsList from "./BlogsList";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -57,8 +58,7 @@ const Home = () => {
           </button>
           <button
             onClick={() => {
-              navigate("/blog/1");
-              console.log(location);
+              navigate("/projects");
             }}
           >
             Projects
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
       </div>
       <div className="Home__Outlet">
-        {location.pathname === "/" ? <>H1</> : <Outlet />}
+        {location.pathname === "/" ? <BlogsList /> : <Outlet />}
       </div>
     </div>
   );
