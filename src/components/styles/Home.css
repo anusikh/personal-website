@@ -1,0 +1,62 @@
+.Home__Main {
+  display: flex;
+  height: 100vh;
+}
+
+.Home__Left {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home__Details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Home__Details > h1 {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.Home__Details > h3 {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.Home__Socials {
+  display: flex;
+  justify-content: space-between;
+  width: 12.5vw;
+  margin: 1rem 0 0 0;
+}
+
+.Home__Links {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0 0;
+}
+
+.Home__Links > button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-weight: bold;
+  width: 8rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+
+.Home__Links > button:hover {
+  background-color: white;
+  color: black;
+}
+
+.Home__Outlet {
+  background-color: red;
+  width: 75vw;
+}
