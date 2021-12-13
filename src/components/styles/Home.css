@@ -31,12 +31,16 @@
   display: flex;
   justify-content: space-between;
   width: 12.5vw;
-  margin: 1rem 0 0 0;
+  margin: 0.4rem 0 0 0;
+}
+
+.Home__Socials > a {
+  text-decoration: none;
+  color: black;
 }
 
 .Home__Links {
   display: flex;
-  flex-direction: column;
   margin: 1rem 0 0 0;
 }
 
@@ -46,7 +50,7 @@
   color: white;
   border-radius: 1rem;
   font-weight: bold;
-  width: 8rem;
+  width: 6rem;
   height: 3rem;
   margin: 0.5rem;
 }
@@ -59,4 +63,10 @@
 .Home__Outlet {
   background-color: red;
   width: 75vw;
+}
+
+.Home__Image {
+  width: 16rem;
+  height: 16rem;
+  margin: 1rem;
 }

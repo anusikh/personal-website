@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, Outlet, useLocation } from "react-router-dom";
 import "./styles/Home.css";
+import Avatar from "../assets/Avatar.png";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Home = () => {
@@ -10,13 +11,39 @@ const Home = () => {
     <div className="Home__Main">
       <div className="Home__Left">
         <div className="Home__Details">
-          <h1>Anusikh Tanmaya Panda</h1>
-          <h3>Full Time Software Engineer, Part time Eccedentesiast</h3>
+          <img className="Home__Image" src={Avatar} alt="Img" />
+          <h1>Anusikh Panda</h1>
+          <h3>Full Time Software Engineer, </h3>
+          <h3>Part time Eccedentesiast</h3>
           <div className="Home__Socials">
-            <FaGithub size={33} />
-            <FaLinkedin size={33} />
-            <FaInstagram size={33} />
-            <FaTwitter size={33} />
+            <a
+              href="https://github.com/anusikh"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaGithub size={33} />
+            </a>
+            <a
+              href="https://linkedin.com/anusikh"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaLinkedin size={33} />
+            </a>
+            <a
+              href="https://instagram.com/anusikh"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaInstagram size={33} />
+            </a>
+            <a
+              href="https://twitter.com/anusikh"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaTwitter size={33} />
+            </a>
           </div>
         </div>
 
