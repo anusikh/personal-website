@@ -1,0 +1,26 @@
+.BlogCard__Main {
+  border-bottom: 0.1rem solid black;
+  margin: 0.4rem 0 0.4rem 0;
+  padding: 1rem;
+}
+
+.BlogCard__Heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.2rem 0;
+}
+
+.BlogCard__Body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.BlogCard__Date {
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+}

@@ -2,3 +2,12 @@
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+::-webkit-scrollbar {
+  background-color: white;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}

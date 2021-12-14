@@ -1,22 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import BlogCard from "./BlogCard";
 import FirebaseHook from "./customHooks/FirebaseHook";
+import "./styles/BlogList.css";
 
 function BlogsList() {
-  const navigate = useNavigate();
   // the res array contains the resultant list and all the CRUD Functions
   const res = FirebaseHook();
-
+  const d = res[0];
   return (
-    <div>
-      <button
-        onClick={(e) => {
-          navigate("/blog/3");
-          console.log(typeof res[1]);
-        }}
-      >
-        Projects
-      </button>
+    <div className="BlogList__Main">
+      {d &&
+        Object.keys(d).map((x, i) => {
+          return <BlogCard data={d[x]} key={i} />;
+        })}
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.Blog__Main {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.Blog__Header {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin: 0 0 0.2rem 0;
+}
+
+.Blog__Date {
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+}

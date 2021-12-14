@@ -10,8 +10,13 @@ import {
   setDoc,
 } from "@firebase/firestore";
 import React from "react";
+import { dataContext } from "../context/dataContext";
 
 const FirebaseHook = () => {
+  // Context Api
+  const dataCon = React.useContext(dataContext);
+  const { dispatch } = dataCon;
+
   const [list, setList] = React.useState();
 
   // To Solve the memory leakage problem, A useEffect Cleanup on Component Unmount
@@ -27,7 +32,9 @@ const FirebaseHook = () => {
     onSnapshot(q, (snapshot) => {
       setList(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     });
-  }, []);
+
+    dispatch({ type: "add", payload: list });
+  }, [dispatch, list]);
 
   const addDocument = React.useCallback(function (e, blogHeading, blogBody) {
     e.preventDefault();

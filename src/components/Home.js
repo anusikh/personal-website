@@ -2,12 +2,15 @@ import React from "react";
 import { useNavigate, Outlet, useLocation } from "react-router-dom";
 import "./styles/Home.css";
 import Avatar from "../assets/Avatar.png";
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import BlogsList from "./BlogsList";
+import Socials from "./Socials";
+import { TiThMenu } from "react-icons/ti";
 
 const Home = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const width = window.innerWidth;
+
   return (
     <div className="Home__Main">
       <div className="Home__Left">
@@ -17,53 +20,33 @@ const Home = () => {
           <h3>Full Time Software Engineer, </h3>
           <h3>Part time Eccedentesiast</h3>
           <div className="Home__Socials">
-            <a
-              href="https://github.com/anusikh"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaGithub size={33} />
-            </a>
-            <a
-              href="https://linkedin.com/anusikh"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaLinkedin size={33} />
-            </a>
-            <a
-              href="https://instagram.com/anusikh"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaInstagram size={33} />
-            </a>
-            <a
-              href="https://twitter.com/anusikh"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FaTwitter size={33} />
-            </a>
+            <Socials />
           </div>
         </div>
 
-        <div className="Home__Links">
-          <button
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            Blogs
-          </button>
-          <button
-            onClick={() => {
-              navigate("/projects");
-            }}
-          >
-            Projects
-          </button>
+        {/* //TODO: Add a dropdown menu component here */}
+        <div className="Home__Menu">
+          <TiThMenu size={30} />
         </div>
+
+        {width > 600 ? (
+          <div className="Home__Links">
+            <button
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Blogs
+            </button>
+            <button
+              onClick={() => {
+                navigate("/projects");
+              }}
+            >
+              Projects
+            </button>
+          </div>
+        ) : null}
       </div>
       <div className="Home__Outlet">
         {location.pathname === "/" ? <BlogsList /> : <Outlet />}

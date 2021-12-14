@@ -1,7 +1,7 @@
 .Home__Main {
   display: flex;
   height: 100vh;
-  animation: fadein 3s linear;
+  animation: fadein 4s linear;
 }
 
 @keyframes fadein {
@@ -71,12 +71,50 @@
 }
 
 .Home__Outlet {
-  background-color: red;
   width: 75vw;
+  overflow-y: scroll;
 }
 
 .Home__Image {
   width: 16rem;
   height: 16rem;
   margin: 1rem;
+}
+
+.Home__Menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .Home__Outlet {
+    width: 100vw;
+    height: 100vh;
+  }
+  .Home__Main {
+    flex-direction: column;
+  }
+  .Home__Left {
+    width: 100vw;
+  }
+  .Home__Socials {
+    justify-content: center;
+    align-items: center;
+  }
+  .Home__Image {
+    display: none;
+  }
+  .Home__Menu {
+    display: block;
+    position: fixed;
+    margin: 0.3rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .Home__Links {
+    display: none;
+  }
+  .Home__Details > h3 {
+    display: none;
+  }
 }
