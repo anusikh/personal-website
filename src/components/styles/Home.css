@@ -1,7 +1,7 @@
 .Home__Main {
   display: flex;
   height: 100vh;
-  animation: fadein 4s linear;
+  animation: fadein 2s linear;
 }
 
 @keyframes fadein {
@@ -73,6 +73,16 @@
 .Home__Outlet {
   width: 75vw;
   overflow-y: scroll;
+  animation: ListIn 1s linear;
+}
+
+@keyframes ListIn {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-right: 0;
+  }
 }
 
 .Home__Image {
