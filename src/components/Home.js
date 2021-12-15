@@ -5,9 +5,12 @@ import Avatar from "../assets/Avatar.png";
 import BlogsList from "./BlogsList";
 import Socials from "./Socials";
 import { TiThMenu } from "react-icons/ti";
+import { MdOutlineArrowBackIos } from "react-icons/md";
+import { ImCross } from "react-icons/im";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [isClicked, setIsClicked] = React.useState(0);
   const location = useLocation();
   const width = window.innerWidth;
 
@@ -26,10 +29,44 @@ const Home = () => {
 
         {/* //TODO: Add a dropdown menu component here */}
         <div className="Home__Menu">
-          <TiThMenu size={30} />
+          {isClicked === 0 ? (
+            <TiThMenu size={25} onClick={() => setIsClicked(1)} />
+          ) : (
+            <ImCross size={24} onClick={() => setIsClicked(0)} />
+          )}
         </div>
 
-        {width > 600 ? (
+        {isClicked === 1 ? (
+          <div className="Home__MenuDropDown">
+            <div
+              className="Home__MenuDropDownItem"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Blogs
+            </div>
+            <div
+              className="Home__MenuDropDownItem"
+              onClick={() => {
+                navigate("/projects");
+              }}
+            >
+              Projects
+            </div>
+          </div>
+        ) : null}
+
+        <div className="Home__BackButton">
+          <MdOutlineArrowBackIos
+            size={24}
+            onClick={() => {
+              navigate("/");
+            }}
+          />
+        </div>
+
+        {width > 800 ? (
           <div className="Home__Links">
             <button
               onClick={() => {

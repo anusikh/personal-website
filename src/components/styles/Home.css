@@ -1,16 +1,6 @@
 .Home__Main {
   display: flex;
   height: 100vh;
-  animation: fadein 2s linear;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .Home__Left {
@@ -19,6 +9,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: MoveLeft 2s linear;
+}
+
+@keyframes MoveLeft {
+  0% {
+    margin-left: 1000vw;
+  }
+  100% {
+  }
 }
 
 .Home__Details {
@@ -73,7 +72,7 @@
 .Home__Outlet {
   width: 75vw;
   overflow-y: scroll;
-  animation: ListIn 1s linear;
+  animation: ListIn 2s linear;
 }
 
 @keyframes ListIn {
@@ -95,7 +94,30 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+.Home__BackButton {
+  display: none;
+}
+
+.Home__MenuDropDown {
+  position: absolute;
+  background-color: white;
+  border: 0.1rem solid;
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+  height: 5rem;
+  margin: 7rem 1rem 0 0;
+  border-radius: 0.4rem;
+  right: 0;
+  z-index: 1;
+}
+
+.Home__MenuDropDownItem {
+  margin: 0.8rem 0 0 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
   .Home__Outlet {
     width: 100vw;
     height: 100vh;
@@ -125,6 +147,17 @@
     display: none;
   }
   .Home__Details > h3 {
+    display: none;
+  }
+  .Home__BackButton {
+    display: block;
+    position: fixed;
+    margin: 0.3rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .Home__Socials {
     display: none;
   }
 }
