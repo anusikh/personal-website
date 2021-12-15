@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "heading": "VSColab",
+    "url": "https://github.com/anusikh/VSColab",
+    "imageUrl": "https://github.com/anusikh/VSColab/raw/master/Screenshots/ss.png",
+    "description": "Using this package we can ssh into the Google Colab instance and also perform remote developement using VSCode .Use Google Colab GPU's and TPU's via an ssh connection locally in your device."
+  },
+  {
+    "id": 2,
+    "heading": "Scorder",
+    "url": "https://github.com/anusikh/screen-recorder",
+    "imageUrl": "https://github.com/anusikh/screen-recorder/raw/main/SS/Screenshot.PNG",
+    "description": "Your simple Media Recorder. Fast, Functional and Free. Record media on the go, without the hassle of complicate Software."
+  },
+  {
+    "id": 3,
+    "heading": "InShorts Clone",
+    "url": "https://github.com/anusikh/scroll-news",
+    "imageUrl": "https://github.com/anusikh/scroll-news/raw/main/assets/sample.gif",
+    "description": "An Inshorts clone build using React-Native and Redux Saga. Also a crypto tracker has been included."
+  },
+  {
+    "id": 4,
+    "heading": "OCR Resnet",
+    "url": "https://github.com/anusikh/OCR_Resnet",
+    "imageUrl": "https://github.com/anusikh/OCR_Resnet/raw/main/images/upload.PNG",
+    "description": "This is my implementation of an OCR using Resnet. Resnet is one of the best Neural Network architectures for image classification and it's biggest advantage is the fact that as the network depth increases, it cancels negative outcomes. I have used the MNIST dataset for numbers and A_Z dataset from Kaggle for the letters.Accuracy is around 96%."
+  }
+]
