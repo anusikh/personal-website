@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaGithubAlt } from "react-icons/fa";
+import { FaGithubAlt } from "react-icons/fa";
 import "./styles/Projects.css";
 import x from "./utils/projects.json";
 
