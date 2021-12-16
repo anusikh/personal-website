@@ -9,7 +9,6 @@ function BlogsList() {
   const d = res[0];
   return (
     <div className="BlogList__Main">
-      <button onClick={res[4]}>SignIN</button>
       {d &&
         Object.keys(d).map((x, i) => {
           return <BlogCard data={d[x]} key={i} />;
