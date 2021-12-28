@@ -88,6 +88,13 @@ const Home = () => {
             >
               Projects
             </button>
+            <button
+              onClick={() => {
+                navigate(`/${process.env.REACT_APP_SECRET_PATH}`);
+              }}
+            >
+              Edit
+            </button>
           </div>
         ) : null}
       </div>
