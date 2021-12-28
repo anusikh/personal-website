@@ -1,4 +1,4 @@
-import db, { auth } from "../../firebase";
+import db from "../../firebase";
 import {
   addDoc,
   collection,
@@ -9,7 +9,6 @@ import {
   query,
   setDoc,
 } from "@firebase/firestore";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import React from "react";
 import { dataContext } from "../context/dataContext";
 
@@ -37,19 +36,6 @@ const FirebaseHook = () => {
     dispatch({ type: "add", payload: list });
   }, [dispatch, list]);
 
-  const signIn = () => {
-    const provider = new GoogleAuthProvider();
-    provider.setCustomParameters({ prompt: "select_account" });
-    provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
   const addDocument = React.useCallback(function (e, blogHeading, blogBody) {
     e.preventDefault();
 
@@ -74,7 +60,7 @@ const FirebaseHook = () => {
     console.log(request);
   }
 
-  return [list, addDocument, updateDocument, deleteDocument, signIn];
+  return [list, addDocument, updateDocument, deleteDocument];
 };
 
 export default FirebaseHook;

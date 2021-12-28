@@ -1,0 +1,32 @@
+.Editor__Container {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.Editor__TextArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.Editor__TextArea > label {
+  margin: 0 0 0.3rem 0;
+}
+
+.Editor__TextArea > label > input {
+  width: 10rem;
+}
+
+.Editor__TextArea > textarea {
+  height: 40vh;
+  margin: 0 0 1rem 0;
+}
+
+.Editor__TextArea > button {
+  height: 2rem;
+  width: 4rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  margin: 0 0 0.3rem 0;
+}

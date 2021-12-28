@@ -18,7 +18,12 @@ const Home = () => {
     <div className="Home__Main">
       <div className="Home__Left">
         <div className="Home__Details">
-          <img className="Home__Image" src={Avatar} alt="Img" />
+          <img
+            className="Home__Image"
+            src={Avatar}
+            alt="Img"
+            onClick={() => console.log(`${process.env.REACT_APP_SECRET_PATH}`)}
+          />
           <h1>Anusikh Panda</h1>
           <h3>Full Time Software Engineer, </h3>
           <h3>Part time Eccedentesiast</h3>
