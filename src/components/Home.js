@@ -83,6 +83,7 @@ const Home = () => {
             <button
               onClick={() => {
                 navigate("/projects");
+                console.log(process.env.REACT_APP_SECRET_PATH);
               }}
             >
               Projects
