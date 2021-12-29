@@ -1,7 +1,8 @@
 .BlogCard__Main {
-  border-bottom: 0.1rem solid black;
-  margin: 0.4rem 0 0.4rem 0;
+  border: 0.4rem solid black;
+  margin: 1rem;
   padding: 1rem;
+  border-radius: 1rem;
 }
 
 .BlogCard__Heading {
