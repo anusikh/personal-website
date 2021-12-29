@@ -22,7 +22,7 @@ const Home = () => {
             className="Home__Image"
             src={Avatar}
             alt="Img"
-            onClick={() => console.log(`${process.env.REACT_APP_SECRET_PATH}`)}
+            onClick={() => navigate("/authenticate")}
           />
           <h1>Anusikh Panda</h1>
           <h3>Full Time Software Engineer, </h3>
@@ -83,7 +83,6 @@ const Home = () => {
             <button
               onClick={() => {
                 navigate("/projects");
-                console.log(process.env.REACT_APP_SECRET_PATH);
               }}
             >
               Projects
