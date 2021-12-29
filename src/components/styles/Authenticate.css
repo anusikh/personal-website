@@ -3,10 +3,15 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  border: 0.4rem black solid;
+  border-radius: 1rem;
 }
 
 .Authenticate__Inputs {
   width: 30vw;
+  border-width: 0.2rem;
+  border-color: black;
+  border-radius: 0.3rem;
 }
 
 .Authenticate__Button {

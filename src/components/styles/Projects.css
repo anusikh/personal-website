@@ -9,7 +9,9 @@
 
 .Project__Container {
   margin: 0 0 1.4rem 0;
-  border-bottom: 0.1rem solid;
+  border: 0.4rem solid;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .Project__Image {
