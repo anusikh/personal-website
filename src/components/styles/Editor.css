@@ -30,3 +30,12 @@
   border-radius: 10rem;
   margin: 0 0 0.3rem 0;
 }
+
+.Editor__DeletePost {
+  margin: 1rem 0 0 0;
+}
+
+.Editor__DeleteHeader {
+  font-size: 2rem;
+  margin-bottom: 0 0 0.4rem 0;
+}
