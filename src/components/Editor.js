@@ -8,10 +8,13 @@ function Editor() {
   const [heading, setHeading] = React.useState();
 
   const res = FirebaseHook()[1];
+  const data = FirebaseHook()[0];
+  const del = FirebaseHook()[3];
 
   const clearInput = () => {
     input.current.value = "";
     input.current.focus();
+    console.log(data);
   };
 
   const addInput = (e) => {
@@ -28,7 +31,17 @@ function Editor() {
         <button onClick={addInput}>Add</button>
         <button onClick={clearInput}>Clear</button>
       </div>
-      <div className="Editor__Preview"></div>
+      <div className="Editor__DeletePost">
+        <div className="Editor__DeleteHeader">Click on post to delete it</div>
+        {data &&
+          data.map((x, i) => {
+            return (
+              <li key={i} onClick={() => del(x.id)}>
+                {x.heading}
+              </li>
+            );
+          })}
+      </div>
     </div>
   );
 }
