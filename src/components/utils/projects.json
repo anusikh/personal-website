@@ -4,7 +4,7 @@
     "heading": "VSColab",
     "url": "https://github.com/anusikh/VSColab",
     "imageUrl": "https://github.com/anusikh/VSColab/raw/master/Screenshots/ss.png",
-    "description": "Using this package we can ssh into the Google Colab instance and also perform remote developement using VSCode .Use Google Colab GPU's and TPU's via an ssh connection locally in your device."
+    "description": "Using this package we can ssh into the Google Colab instance and also perform remote developement using VSCode .Use Google Colab GPU's and TPU's via an ssh connection locally in your device. Very Useful for students who want to get their first taste at Linux OS and developers who want to overcome the paywall of using the terminal feature in Colab Notebooks. "
   },
   {
     "id": 2,
