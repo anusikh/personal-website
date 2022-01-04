@@ -48,3 +48,13 @@
   color: white;
   border-radius: 1rem;
 }
+
+@media only screen and (max-width: 941px) {
+  .Project__Body {
+    flex-direction: column;
+  }
+  .Project__Image {
+    width: auto;
+    height: max-content;
+  }
+}
