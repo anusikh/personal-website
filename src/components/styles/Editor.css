@@ -17,7 +17,7 @@
 }
 
 .Editor__TextArea > textarea {
-  height: 40vh;
+  height: 60vh;
   margin: 0 0 1rem 0;
 }
 
@@ -38,4 +38,23 @@
 .Editor__DeleteHeader {
   font-size: 2rem;
   margin: 0 0 0.4rem 0;
+}
+
+.Editor__DeleteComp {
+  display: flex;
+  align-items: center;
+}
+
+.Editor__DeleteComp > p {
+  margin: 0 0.4rem 0 0.4rem;
+}
+
+.Editor__DeleteComp > button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.3rem;
 }
