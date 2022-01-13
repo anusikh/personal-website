@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/src/components/__snapshots__
 /.pnp
 .pnp.js
 
