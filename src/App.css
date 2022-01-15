@@ -1,13 +1,18 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
 * {
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 ::-webkit-scrollbar {
-  background-color: white;
+  background-color: var(--white);
   width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: var(--black);
 }

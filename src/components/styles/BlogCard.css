@@ -1,5 +1,5 @@
 .BlogCard__Main {
-  border: 0.4rem solid black;
+  border: 0.4rem solid var(--black);
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
