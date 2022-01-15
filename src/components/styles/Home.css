@@ -45,7 +45,7 @@
 
 .Home__Socials > a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 .Home__Links {
@@ -55,8 +55,8 @@
 
 .Home__Links > button {
   border: none;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border-radius: 1rem;
   font-weight: bold;
   width: 6rem;
@@ -65,8 +65,8 @@
 }
 
 .Home__Links > button:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .Home__Outlet {
@@ -100,7 +100,7 @@
 
 .Home__MenuDropDown {
   position: absolute;
-  background-color: white;
+  background-color: var(--white);
   border: 0.1rem solid;
   display: flex;
   flex-direction: column;

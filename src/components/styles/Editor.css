@@ -24,8 +24,8 @@
 .Editor__TextArea > button {
   height: 2rem;
   width: 4rem;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border: none;
   border-radius: 10rem;
   margin: 0 0 0.3rem 0;
@@ -53,8 +53,8 @@
   display: flex;
   justify-content: center;
   border: none;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border-radius: 1rem;
   padding: 0.3rem;
 }
