@@ -15,5 +15,5 @@ export function toDateTime(secs) {
     "Friday",
   ];
 
-  return ` ${d}/${m}/${y} ${dayArray[day]}`;
+  return ` ${d}/${m + 1}/${y} ${dayArray[day]}`;
 }
