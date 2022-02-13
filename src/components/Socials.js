@@ -1,37 +1,39 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import "../components/styles/Home.css";
+import { FaInstagram } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { RiLinkedinLine } from "react-icons/ri";
+import { FiTwitter } from "react-icons/fi";
 
 function Socials() {
+  const soc_links = [
+    "https://github.com/anusikh",
+    "https://linkedin.com/anusikh",
+    "https://instagram.com/anusikh",
+    "https://twitter.com/anusikh",
+  ];
+
+  const icons = [
+    <FiGithub size={27} />,
+    <RiLinkedinLine size={27} />,
+    <FaInstagram size={27} />,
+    <FiTwitter size={27} />,
+  ];
+
   return (
     <>
-      <a
-        href="https://github.com/anusikh"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <FaGithub size={33} />
-      </a>
-      <a
-        href="https://linkedin.com/anusikh"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <FaLinkedin size={33} />
-      </a>
-      <a
-        href="https://instagram.com/anusikh"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <FaInstagram size={33} />
-      </a>
-      <a
-        href="https://twitter.com/anusikh"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <FaTwitter size={33} />
-      </a>
+      {[0, 1, 2, 3].map((i) => {
+        return (
+          <a
+            href={soc_links[i]}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="Social__icons"
+          >
+            {icons[i]}
+          </a>
+        );
+      })}
     </>
   );
 }

@@ -30,16 +30,18 @@
 
 .Home__Details > h1 {
   margin: 0 1rem 1rem 1rem;
+  font-weight: 100;
 }
 
 .Home__Details > h3 {
   margin: 0 1rem 1rem 1rem;
+  font-weight: 100;
 }
 
 .Home__Socials {
   display: flex;
   justify-content: space-between;
-  width: 12.5vw;
+  width: 13vw;
   margin: 0.4rem 0 0 0;
 }
 
@@ -55,18 +57,17 @@
 
 .Home__Links > button {
   border: none;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 1rem;
-  font-weight: bold;
+  border: 0.1rem black solid;
   width: 6rem;
   height: 3rem;
   margin: 0.5rem;
 }
 
 .Home__Links > button:hover {
-  background-color: var(--white);
-  color: var(--black);
+  transform: scale(1.1);
 }
 
 .Home__Outlet {
@@ -160,4 +161,8 @@
   .Home__Socials {
     display: none;
   }
+}
+
+.Social__icons:hover {
+  transform: scale(1.1);
 }

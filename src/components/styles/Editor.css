@@ -24,11 +24,15 @@
 .Editor__TextArea > button {
   height: 2rem;
   width: 4rem;
-  background-color: var(--black);
-  color: var(--white);
-  border: none;
+  background-color: var(--white);
+  color: var(--black);
+  border: 0.1rem black solid;
   border-radius: 10rem;
   margin: 0 0 0.3rem 0;
+}
+
+.Editor__TextArea > button:hover {
+  transform: scale(1.1);
 }
 
 .Editor__DeletePost {
@@ -36,7 +40,7 @@
 }
 
 .Editor__DeleteHeader {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0 0 0.4rem 0;
 }
 
@@ -52,9 +56,14 @@
 .Editor__DeleteComp > button {
   display: flex;
   justify-content: center;
-  border: none;
-  background-color: var(--black);
-  color: var(--white);
+  border: 0.1rem black solid;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 1rem;
   padding: 0.3rem;
+  margin: 0.1rem;
+}
+
+.Editor__DeleteComp > button:hover {
+  transform: scale(1.1);
 }

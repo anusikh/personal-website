@@ -56,8 +56,7 @@ const FirebaseHook = () => {
   }
 
   async function deleteDocument(id) {
-    let request = await deleteDoc(doc(db, "blogs", id));
-    console.log(request);
+    await deleteDoc(doc(db, "blogs", id));
   }
 
   return [list, addDocument, updateDocument, deleteDocument];
