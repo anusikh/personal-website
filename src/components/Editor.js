@@ -1,7 +1,6 @@
 import React from "react";
 import FirebaseHook from "./customHooks/FirebaseHook";
 import "./styles/Editor.css";
-import { BsFillDiamondFill } from "react-icons/bs";
 
 function Editor() {
   const input = React.useRef(null);
@@ -35,11 +34,10 @@ function Editor() {
       <div className="Editor__DeletePost">
         <div className="Editor__DeleteHeader">Delete Post(s)</div>
         {data &&
-          data.map((x, i) => {
+          data?.map((x, i) => {
             return (
               <div key={i} className="Editor__DeleteComp">
-                <BsFillDiamondFill />
-                <p>{x.heading}</p>
+                - <p>{x.heading}</p>
                 <button onClick={() => del(x.id)}>delete</button>
               </div>
             );
