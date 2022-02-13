@@ -15,11 +15,11 @@ function Editor() {
   const clearInput = () => {
     input.current.value = "";
     input.current.focus();
-    console.log(data);
   };
 
   const addInput = (e) => {
     res(e, heading, `${md}`);
+    input.current.value = "";
   };
 
   return (

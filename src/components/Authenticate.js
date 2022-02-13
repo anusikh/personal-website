@@ -17,10 +17,8 @@ function Authenticate() {
   const signIn = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const user = userCredential.user;
         dispatch2({ type: "auth", payload: true });
         navigate("/editor");
-        console.log(user);
       })
       .catch((error) => {
         const errorCode = error.code;

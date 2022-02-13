@@ -15,13 +15,6 @@
   },
   {
     "id": 3,
-    "heading": "InShorts Clone",
-    "url": "https://github.com/anusikh/scroll-news",
-    "imageUrl": "https://github.com/anusikh/scroll-news/raw/main/assets/sample.gif",
-    "description": "An Inshorts clone build using React-Native and Redux Saga. Also a crypto tracker has been included."
-  },
-  {
-    "id": 4,
     "heading": "OCR Resnet",
     "url": "https://github.com/anusikh/OCR_Resnet",
     "imageUrl": "https://github.com/anusikh/OCR_Resnet/raw/main/images/upload.PNG",

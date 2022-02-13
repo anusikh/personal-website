@@ -10,22 +10,20 @@ function BlogCard(props) {
   const date = toDateTime(props.data.date.seconds);
 
   return (
-    <div className="BlogCard__Main">
+    <div
+      className="BlogCard__Main"
+      onClick={() => {
+        navigate(`/blog/${props.data.id}`, { state: { data: props.data } });
+      }}
+    >
       <div className="BlogCard__Heading">
-        <p
-          onClick={() => {
-            navigate(`/blog/${props.data.id}`, { state: { data: props.data } });
-          }}
-        >
-          {props.data.heading}
-        </p>
+        <p>{props.data.heading}</p>
       </div>
       <div className="BlogCard__Date">
         <FaCalendar />
         &nbsp;
         {date}
       </div>
-      <div className="BlogCard__Body">{props.data.body}</div>
     </div>
   );
 }

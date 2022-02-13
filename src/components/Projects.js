@@ -12,7 +12,7 @@ function Projects() {
             <div className="Project__Header">{x[i].heading}</div>
             <div className="Project__Body">
               <img
-                className={x[i].id === 3 ? "Project__Gif" : "Project__Image"}
+                className="Project__Image"
                 src={x[i].imageUrl}
                 alt="Loading"
               />

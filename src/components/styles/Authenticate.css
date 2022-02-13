@@ -3,23 +3,27 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  border: 0.4rem var(--black) solid;
+  border: 0.1rem var(--black) solid;
   border-radius: 1rem;
 }
 
 .Authenticate__Inputs {
   width: 30vw;
-  border-width: 0.2rem;
+  border-width: 0.1rem;
   border-color: var(--black);
   border-radius: 0.3rem;
 }
 
 .Authenticate__Button {
-  background-color: var(--black);
+  background-color: var(--white);
   width: 5rem;
   height: 2rem;
-  color: var(--white);
-  border: none;
+  color: var(--black);
+  border: 0.1rem black solid;
   border-radius: 10rem;
   margin: 1rem 0 0 0;
+}
+
+.Authenticate__Button:hover {
+  transform: scale(1.1);
 }
