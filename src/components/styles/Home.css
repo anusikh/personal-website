@@ -1,6 +1,11 @@
 .Home__Main {
   display: flex;
   height: 100vh;
+  color: var(--black);
+}
+
+.Home__ThemeButton:hover {
+  transform: scale(1.1);
 }
 
 .Home__Left {
@@ -60,7 +65,7 @@
   background-color: var(--white);
   color: var(--black);
   border-radius: 1rem;
-  border: 0.1rem black solid;
+  border: 0.1rem var(--black) solid;
   width: 6rem;
   height: 3rem;
   margin: 0.5rem;

@@ -6,12 +6,26 @@ import Socials from "./Socials";
 import { TiThMenu } from "react-icons/ti";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { ImCross } from "react-icons/im";
+import { CgSun } from "react-icons/cg";
+import { BiMoon } from "react-icons/bi";
 
 const Home = () => {
   const navigate = useNavigate();
   const [isClicked, setIsClicked] = React.useState(0);
+  const [theme, setTheme] = React.useState(0);
   const location = useLocation();
   const width = window.innerWidth;
+
+  React.useEffect(() => {
+    var r = document.querySelector(":root");
+    if (theme === 1) {
+      r.style.setProperty("--black", "white");
+      r.style.setProperty("--white", "black");
+    } else {
+      r.style.setProperty("--white", "white");
+      r.style.setProperty("--black", "black");
+    }
+  }, [theme]);
 
   return (
     <div className="Home__Main">
@@ -19,8 +33,26 @@ const Home = () => {
         <div className="Home__Details">
           <h1 onClick={() => navigate("/authenticate")}>Anusikh Panda</h1>
           <h3>Software Engineer</h3>
+
           <div className="Home__Socials">
             <Socials />
+            {theme === 0 ? (
+              <CgSun
+                size={25}
+                className="Home__ThemeButton"
+                onClick={() => {
+                  setTheme(1);
+                }}
+              />
+            ) : (
+              <BiMoon
+                size={25}
+                className="Home__ThemeButton"
+                onClick={() => {
+                  setTheme(0);
+                }}
+              />
+            )}
           </div>
         </div>
 
