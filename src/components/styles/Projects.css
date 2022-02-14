@@ -1,6 +1,7 @@
 .Project__Main {
   margin: 1rem;
   padding: 1rem;
+  color: var(--black);
 }
 
 .Project__Header {
@@ -19,7 +20,7 @@
   height: 10rem;
   margin: 1rem 0 0 0;
   border-radius: 1rem;
-  border: 0.1rem black solid;
+  border: 0.1rem var(--black) solid;
   padding: 0.1rem;
 }
 
@@ -41,7 +42,7 @@
   background-color: var(--white);
   height: 2.3rem;
   width: 5rem;
-  border: 0.1rem black solid;
+  border: 0.1rem var(--black) solid;
   color: var(--black);
   border-radius: 1rem;
 }

@@ -4,6 +4,7 @@
   padding: 1rem;
   border-radius: 1rem;
   display: flex;
+  color: var(--black);
   justify-content: space-between;
 }
 
