@@ -65,7 +65,7 @@
   background-color: var(--white);
   color: var(--black);
   border-radius: 1rem;
-  border: 0.1rem var(--black) solid;
+  border: 0.12rem var(--black) solid;
   width: 6rem;
   height: 3rem;
   margin: 0.5rem;
@@ -107,7 +107,7 @@
 .Home__MenuDropDown {
   position: absolute;
   background-color: var(--white);
-  border: 0.1rem solid;
+  border: 0.12rem solid;
   display: flex;
   flex-direction: column;
   width: 8rem;

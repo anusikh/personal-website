@@ -23,7 +23,6 @@ function Projects() {
                   onClick={() => window.open(x[i].url, "_blank")}
                 >
                   <FaGithubAlt size={20} />
-                  &nbsp; Github
                 </button>
               </div>
             </div>

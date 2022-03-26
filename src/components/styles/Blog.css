@@ -3,7 +3,9 @@
   padding: 1rem;
   color: var(--black);
 }
-
+.Blog__Markdown > span {
+  background-color: red;
+}
 .Blog__Header {
   font-size: 2.6rem;
   font-weight: bold;

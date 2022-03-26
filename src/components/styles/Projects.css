@@ -10,7 +10,7 @@
 
 .Project__Container {
   margin: 0 0 1.4rem 0;
-  border: 0.1rem solid;
+  border: 0.12rem solid;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -20,7 +20,7 @@
   height: 10rem;
   margin: 1rem 0 0 0;
   border-radius: 1rem;
-  border: 0.1rem var(--black) solid;
+  border: 0.12rem var(--black) solid;
   padding: 0.1rem;
 }
 
@@ -35,16 +35,15 @@
 .Project__Url {
   display: flex;
   align-items: center;
-  align-content: center;
-  align-self: center;
   justify-content: center;
+  text-align: center;
   margin: 1rem 0 1rem 0;
   background-color: var(--white);
   height: 2.3rem;
-  width: 5rem;
-  border: 0.1rem var(--black) solid;
+  width: 2.3rem;
+  border: 0.12rem var(--black) solid;
   color: var(--black);
-  border-radius: 1rem;
+  border-radius: 2.3rem;
 }
 
 .Project__Url:hover {
