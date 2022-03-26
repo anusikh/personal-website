@@ -19,5 +19,12 @@
     "url": "https://github.com/anusikh/OCR_Resnet",
     "imageUrl": "https://github.com/anusikh/OCR_Resnet/raw/main/images/upload.PNG",
     "description": "This is my implementation of an OCR using Resnet. Resnet is one of the best Neural Network architectures for image classification and it's biggest advantage is the fact that as the network depth increases, it cancels negative outcomes. I have used the MNIST dataset for numbers and A_Z dataset from Kaggle for the letters.Accuracy is around 96%."
+  },
+  {
+    "id": 4,
+    "heading": "Oppty",
+    "url": "https://oppty.ai/",
+    "imageUrl": "https://github.com/anusikh/personal-website/blob/main/src/assets/2.png",
+    "description": "I worked as a freelance dev for this projects where we managed to develop a portal that enables professionals to simplify the hiring process with the help of AI"
   }
 ]

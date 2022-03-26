@@ -18,12 +18,14 @@ function Projects() {
               />
               <div className="Project__Description">
                 {`${x[i].description}`}
-                <button
-                  className="Project__Url"
-                  onClick={() => window.open(x[i].url, "_blank")}
-                >
-                  <FaGithubAlt size={20} />
-                </button>
+                {x[i].url !== "" ? (
+                  <button
+                    className="Project__Url"
+                    onClick={() => window.open(x[i].url, "_blank")}
+                  >
+                    <FaGithubAlt size={20} />
+                  </button>
+                ) : null}
               </div>
             </div>
           </div>
