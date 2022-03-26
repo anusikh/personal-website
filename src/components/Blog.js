@@ -35,6 +35,7 @@ function Blog() {
                   children={String(children).replace(/\n$/, "")}
                   style={atomDark}
                   language={match[1]}
+                  className="Blog__Markdown"
                   PreTag="div"
                   {...props}
                 />
