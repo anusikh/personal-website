@@ -34,7 +34,7 @@ const FirebaseHook = () => {
     });
 
     dispatch({ type: "add", payload: list });
-  }, [dispatch, list]);
+  }, []);
 
   const addDocument = React.useCallback(function (e, blogHeading, blogBody) {
     e.preventDefault();

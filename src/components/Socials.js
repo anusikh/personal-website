@@ -25,6 +25,7 @@ function Socials() {
       {[0, 1, 2, 3].map((i) => {
         return (
           <a
+            key={i}
             href={soc_links[i]}
             rel="noopener noreferrer"
             target="_blank"
