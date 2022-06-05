@@ -30,7 +30,7 @@ function Projects() {
                     </button>
                     <button
                       className="Project__Url"
-                      onClick={() => window.open(x[i].url, "_blank")}
+                      onClick={() => window.open(x[i].url1, "_blank")}
                     >
                       <MdModeEditOutline size={20} />
                     </button>
